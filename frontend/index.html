@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>💸 Expense Tracker</h1>
+    <p class="subtitle">Track your daily spending</p>
+
+    <div class="card">
+        <input type="number" id="amount" placeholder="Amount (₹)">
+        <input type="text" id="category" placeholder="Category (Food, Travel)">
+        <input type="date" id="date">
+        <button onclick="addExpense()">Add Expense</button>
+    </div>
+
+    <div class="list-card">
+        <h3>Your Expenses</h3>
+        <p id="total">Total: ₹0</p>
+        <ul id="expenseList"></ul>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
