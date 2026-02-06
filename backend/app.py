@@ -46,4 +46,6 @@ def get_expenses():
     return jsonify([dict(row) for row in rows])
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=10000)
+    print("Starting Flask server...")
+    app.run(debug=True)
+
