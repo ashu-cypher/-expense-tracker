@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 360px;
+    text-align: center;
+    color: white;
+}
+
+.subtitle {
+    margin-bottom: 15px;
+    opacity: 0.9;
+}
+
+.card, .list-card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    color: black;
+}
+
+.card input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.card button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background: #5a67d8;
+}
+
+#total {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.list-card ul {
+    list-style: none;
+}
+
+.list-card li {
+    background: #f1f1f1;
+    padding: 10px;
+    margin: 6px 0;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: slideIn 0.3s ease;
+}
+
+.list-card li button {
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 3px 6px;
+    cursor: pointer;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
